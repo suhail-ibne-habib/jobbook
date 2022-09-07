@@ -194,6 +194,11 @@ img{
     margin-right: 5px;
 }
 
+.pagination .pagination-list .pagination-link.active{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 @media (min-width: 768px){
     .container{
         width: 720px;
