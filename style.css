@@ -20,7 +20,6 @@ img{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1140px;
 }
 
 .flex{
@@ -42,6 +41,18 @@ img{
 .posts{
     flex-basis: 650px;
 }
+
+/*--Side bar--*/
+.side-bar{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--secondary-font-color);
+}
+
 
 /*--Posts starts--*/
 .posts article{
@@ -127,4 +138,36 @@ img{
     line-height: 24px;
     text-align: left;
     color: var(--secondary-font-color)
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 960px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    /* .posts{
+        width: 100%;
+    } */
 }
