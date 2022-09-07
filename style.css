@@ -1,0 +1,130 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #38B76B;
+    --secondary-color: #EFEFEF;
+    --primary-font-color: #000;
+    --secondary-font-color: #AAAAAA;
+    --font-grey: #333;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.dir-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.posts{
+    flex-basis: 650px;
+}
+
+/*--Posts starts--*/
+.posts article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid #ccc 1px;
+}
+
+.posts article .tags{
+    list-style: none;
+}
+
+.posts article .tags{
+    gap: 30px;
+}
+
+.posts article .article-feature{
+    width: 100%;
+}
+
+.posts article .tags .tag a{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: solid 1px var(--primary-color);
+    border-radius: 6px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.posts article h2{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.posts article .article-address{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: var(--font-grey);
+}
+
+.posts article .article-infos{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: var(--font-grey);
+}
+
+.posts article .article-summary{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: var(--font-grey);
+}
+
+.posts article .article-summary .article-name{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: var(--secondary-font-color)
+}
