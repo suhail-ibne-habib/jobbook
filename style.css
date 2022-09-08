@@ -17,9 +17,18 @@ img{
     max-width: 100%;
 }
 
+main{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .container{
     margin-left: auto;
     margin-right: auto;
+}
+
+.no-border{
+    border: none !important;
 }
 
 .flex{
@@ -83,6 +92,45 @@ img{
     outline: none;
 }
 
+/*--Sort by starts--*/
+.sort-by .sort-by-title{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--secondary-font-color);
+}
+
+.sort-by{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.sort-by ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap:  20px;
+    flex-wrap: wrap;
+}
+
+.sort-by ul li a.sort-option{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--secondary-font-color);
+    text-decoration: none;
+}
+
+.sort-by ul li a.sort-option.active{
+    color: var(--primary-color);
+}
+
 /*--Posts starts--*/
 .posts article{
     display: flex;
@@ -91,6 +139,10 @@ img{
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: solid #ccc 1px;
+}
+
+.posts article:first-of-type{
+    padding-top: 0;
 }
 
 .posts article .tags{
@@ -167,6 +219,43 @@ img{
     line-height: 24px;
     text-align: left;
     color: var(--secondary-font-color)
+}
+
+ul.article-details{
+    list-style: none;
+}
+
+ul.article-details li.article-detaile{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+ul.article-details li.article-detaile .article-detaile-title{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul.article-details li.article-detaile .article-detaile-desc{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+ul.article-details li.article-detaile textarea.article-detaile-desc{
+    /* overflow: hidden; */
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
+    outline: none;
 }
 
 /*--Pagination starts--*/
