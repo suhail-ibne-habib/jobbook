@@ -1,6 +1,7 @@
 const textArea = document.querySelectorAll('textarea.article-detaile-desc');
 const filterBtns = document.querySelectorAll( '.mob-filters button' );
 const modal = document.querySelector( '.modal' );
+const regiBtn = document.querySelector( '.regi-btn' );
 
 function adjustHeight(el){
     el.style.height = el.scrollHeight +"px";
@@ -47,4 +48,13 @@ if( filterBtns ){
 
 }
 
+regiBtn.addEventListener( 'click', e=>{
+    const modal = document.getElementById( 'reg-modal' );
+    modal.classList.toggle( 'active' );
+    modal.querySelector( '#backdrop' ).addEventListener( 'click', e =>{
+        modal.classList.remove( 'active' );
+    } )
+    
+
+} )
 

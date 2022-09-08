@@ -31,6 +31,10 @@ main{
     border: none !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .flex{
     display: flex;
 }
@@ -424,7 +428,7 @@ ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
 }
 
 .modal .content{
-    max-width: 650px;
+    max-width: 450px;
     flex-basis: 100%;
     background-color: #fff;
     position: relative;
@@ -466,6 +470,14 @@ ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+#reg-modal a{
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 @media (min-width: 768px){
