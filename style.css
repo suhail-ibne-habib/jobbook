@@ -480,6 +480,76 @@ ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
     display: inline-block;
 }
 
+/*--Login--*/
+.login-page{
+    width: 100%;
+    height: calc( 100vh - 90px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.login-page .login-form .login-form-title{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login-page .login-form{
+    background-color: #fff;
+    flex-basis: 450px;
+    padding: 50px 30px;
+}
+
+.login-page .login-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page .login-form form input{
+    border: solid 1px #ccc;
+    height: 48px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-page .login-form a{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--secondary-font-color);
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-page .login-form form button{
+    background-color: var(--primary-color);
+    height: 50px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #fff;
+    border: none;
+}
+
+.login-page .login-form form input:focus{
+    outline: none;
+}
+
 @media (min-width: 768px){
     .container{
         width: 720px;
