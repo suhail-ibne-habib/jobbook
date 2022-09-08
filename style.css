@@ -510,6 +510,46 @@ ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
     flex-direction: column;
 }
 
+.login-page .login-form form.regi-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.login-page .login-form form.regi-form input{
+    width: 100%;
+}
+
+.login-page .login-form form.regi-form button{
+    width: 48px;
+    flex-shrink: 0;
+}
+
+.login-page .login-form button.help{
+    height: 48px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.login-page .login-form button.help span img{
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transform: translateY(50%);
+}
+
 .login-page .login-form form input{
     border: solid 1px #ccc;
     height: 48px;
@@ -607,6 +647,12 @@ ul.article-details li.article-detaile textarea.article-detaile-desc:focus{
     
     .hide-flex-sp{
         display: none;
+    }
+
+    .login-page .login-form{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
